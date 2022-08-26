@@ -1,11 +1,11 @@
 %global _empty_manifest_terminate_build 0
 Name:		python-mne
-Version:	0.24.1
+Version:	1.1.1
 Release:	1
 Summary:	MNE-Python project for MEG and EEG data analysis.
 License:	BSD-3-Clause
 URL:		https://github.com/mne-tools/mne-python
-Source0:	https://files.pythonhosted.org/packages/b0/64/8cd2716407139822b268ed65662ec8ef0880aa0cd86c715b698b49a4c7e7/mne-0.24.1.tar.gz
+Source0:	https://files.pythonhosted.org/packages/42/bd/43c5ca67e7017e0f95e05b0bd2fb9f8d0cfa8f8ad449afe9ac53748541f8/mne-1.1.1.tar.gz
 BuildArch:	noarch
 
 Requires:	python3-numpy
@@ -59,7 +59,7 @@ for data input/output, preprocessing, visualization, source estimation, time-fre
 analysis, connectivity analysis, machine learning, and statistics.
 
 %prep
-%autosetup -n mne-0.24.1
+%autosetup -n mne-1.1.1
 
 %build
 %py3_build
@@ -99,6 +99,9 @@ mv %{buildroot}/doclist.lst .
 %{_docdir}/*
 
 %changelog
+* Fri Aug 26 2022 hkgy <kaguyahatu@outlook.com> - 1.1.1-1
+- Update to 1.1.1
+
 * Fri Dec 17 2021 Python_Bot <Python_Bot@openeuler.org> - 0.24.1-1
 - Package Init
 
